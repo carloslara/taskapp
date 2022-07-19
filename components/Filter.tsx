@@ -63,7 +63,7 @@ export default function Filter() {
                   className="text-appBlue-soft hover:bg-appBlue hover:text-white group flex w-full items-center rounded-md px-2 py-2 text-sm"
                 >
                   <ClockIcon className="mr-2 h-5 w-5" />
-                  31 a 60 min
+                  31 to 60 min
                 </button>
               </Menu.Item>
               <Menu.Item>

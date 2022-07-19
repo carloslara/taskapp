@@ -1,5 +1,6 @@
 import Layout from "../Layout/Layout";
-import Graph from "../components/Graph";
+// import Graph from "../components/Graph";
+import dynamic from "next/dynamic";
 
 /**
  * En esta página podemos ver el llamado de un componente llamado Graph, como se puede observar
@@ -7,11 +8,14 @@ import Graph from "../components/Graph";
  * de presentación
  * @returns Component
  */
+
+const GraphNoSSR = dynamic(() => import("../components/Graph"), { ssr: false });
+
 const ReportPage = () => (
   <Layout title="Task App - Reports">
     <div className="grid grid-cols-12 mt-4 w-full gap-4">
       <div className="col-span-12">
-        <Graph />
+        <GraphNoSSR />
       </div>
     </div>
   </Layout>

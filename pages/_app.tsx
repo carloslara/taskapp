@@ -1,4 +1,3 @@
-import React from "react";
 import { AppProps } from "next/app";
 import { Provider } from "react-redux";
 import { store } from "../store";
@@ -31,7 +30,7 @@ const ClientComponent = dynamic(
 
 function AppTask({ Component, pageProps }: AppProps) {
   return (
-    <Provider store={store}>
+    <Provider store={store} children={undefined}>
       <Component {...pageProps} />;
     </Provider>
   );
