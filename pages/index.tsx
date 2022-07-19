@@ -15,5 +15,6 @@ const IndexPage = () => (
       <CustomCard />
     </div>
   </Layout>
+);
 
 export default IndexPage;
