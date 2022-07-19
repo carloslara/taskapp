@@ -71,7 +71,7 @@ export default function Example() {
                     {navigation.map((item) => (
                       <a
                         key={item.name}
-                        onClick={(e) => redirect(item.href)}
+                        onClick={() => redirect(item.href)}
                         className={classNames(
                           selectedMenu == item.href
                             ? "bg-appBlue text-white"
@@ -101,7 +101,7 @@ export default function Example() {
                 <Disclosure.Button
                   key={item.name}
                   as="a"
-                  onClick={(e) => redirect(item.href)}
+                  onClick={() => redirect(item.href)}
                   className={classNames(
                     selectedMenu == item.href
                       ? "bg-appBlue text-white"
