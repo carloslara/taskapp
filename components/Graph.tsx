@@ -32,7 +32,7 @@ const Graph = (): any => {
       },
     },
   });
-  const [series, setSeries] = useState<ApexAxisChartSeries | null>([
+  const [series, setSeries] = useState<ApexAxisChartSeries>([
     {
       name: "Number of hours:",
       data: [0],
