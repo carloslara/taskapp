@@ -8,6 +8,6 @@ export default class Dates {
   }
 
   get date(): string {
-    return moment().add(-this.days, "days").format("D/M/YYYY");
+    return moment().subtract(this.days, "days").format("D/M/YYYY");
   }
 }
