@@ -2,7 +2,6 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build && next export",
     "start": "next start",
     "type-check": "tsc",
     "lint": "next lint"
