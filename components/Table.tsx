@@ -21,7 +21,7 @@ const Table = (): any => {
             <th className="p-3 w-2/6">Task</th>
             <th className="p-3">Created at</th>
             <th className="p-3">Completed</th>
-            <th className="p-3">Status</th>
+            <th className="p-3 hidden md:block">Status</th>
             <th className="p-3">Time</th>
             <th className="p-3">Duration</th>
           </tr>

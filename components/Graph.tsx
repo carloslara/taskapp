@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Chart from "react-apexcharts";
+import { ApexOptions } from "apexcharts";
 import Data from "../util/Data";
 import { Task as ITask } from "../interfaces/ITask";
 import { useSelector } from "react-redux";
@@ -17,7 +18,7 @@ const Graph = (): any => {
   /**
    * Se crean objetos vacíos para inicializar el componente gráfico.
    */
-  const [options, setOptions] = useState({
+  const [options, setOptions] = useState<ApexOptions>({
     chart: { id: "report-graph" },
     xaxis: {
       categories: [],
@@ -31,10 +32,10 @@ const Graph = (): any => {
       },
     },
   });
-  const [series, setSeries] = useState<Serie[] | null>([
+  const [series, setSeries] = useState<ApexAxisChartSeries | null>([
     {
-      name: "0",
-      data: ["0"],
+      name: "Number of hours:",
+      data: [0],
     },
   ]);
 
@@ -48,7 +49,7 @@ const Graph = (): any => {
         categories: data._dates,
       },
     });
-    setSeries(data._series);
+    setSeries([{ ...options, data: data._series }]);
   }, []);
 
   return (

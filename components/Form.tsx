@@ -295,7 +295,7 @@ export const Form = () => {
  */
 const props: PropsHOC = {
   styleGrid: "col-span-12 md:col-span-6 lg:col-span-3",
-  styleCard: "shadow-lg md:rounded-lg px-3 pt-4 pb-4 mb-4 bg-appblue-light",
+  styleCard: "shadow-lg md:rounded-lg px-3 pt-4 pb-4 mb-4 bg-blue-200",
 };
 
 /**

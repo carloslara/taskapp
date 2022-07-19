@@ -197,7 +197,7 @@ const TaskElement = ({ data }: Props) => {
  */
 const props: PropsHOC = {
   styleGrid: "col-span-12 md:col-span-6 lg:col-span-3",
-  styleCard: "shadow-lg md:rounded-lg px-3 pt-4 pb-4 mb-4 bg-white",
+  styleCard: "shadow-lg md:rounded-lg px-3 pt-4 pb-4 mb-0 md:mb-4 bg-white",
 };
 
 /**

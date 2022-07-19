@@ -31,7 +31,7 @@ const Row = ({ data }: Props) => {
       </td>
       <td className="p-3">{data.createDate}</td>
       <td className="p-3">{data.endDate}</td>
-      <td className="p-3">
+      <td className="p-3 hidden md:block">
         <span className="bg-appBlue text-gray-50 font-bold rounded-full px-4 py-0.5 uppercase text-xs block">
           <CheckIcon className="w-4 -mt-0.5 inline" /> Complete
         </span>

@@ -10,11 +10,10 @@ import List from "../components/List";
  */
 const IndexPage = () => (
   <Layout title="Task App">
-    <div className="grid grid-cols-12 gap-4">
-      <CustomCard />
+    <div className="grid grid-cols-12 gap-1 md:gap-4">
       <List />
+      <CustomCard />
     </div>
   </Layout>
-);
 
 export default IndexPage;
